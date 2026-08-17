@@ -44,7 +44,7 @@ jobs:
           # Use the consolidated build script with GitHub Pages base URL and production optimizations
           ./build.sh -b "${{ steps.pages.outputs.base_url }}/" -p
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
