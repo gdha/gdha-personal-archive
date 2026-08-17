@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h2>Archive by Year</h2>
+<year-grid>
+    {{- range .Site.Params.years }}
+    <year-card>
+        <a href="/{{ . }}/">
+            <year-number>{{ . }}</year-number>
+            <year-arrow>→</year-arrow>
+        </a>
+    </year-card>
+    {{- end }}
+</year-grid>
+{{ end }}

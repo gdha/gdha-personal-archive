@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="keywords"
+        content="Gratien Dhaese, DevOps, presentations, talks, archive, PDF, Linux, security, compliance, automation, cloud, ReaR">
+    <meta name="author" content="{{ .Site.Params.author }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ .Section }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}">
+    <meta property="og:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="{{ .Section }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}">
+    <meta property="twitter:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "description": "{{ .Site.Params.description }}",
+    "url": "{{ .Site.BaseURL }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.author }}",
+      "url": "{{ .Site.Params.homepage }}"
+    }
+  }
+  </script>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Section }} | {{ .Site.Title }}{{ end }}</title>
+</head>
+
+<body>
+    <h1>
+        <a href="/">{{ .Site.Title }}
+            {{ if not .IsHome }}<br><span class="section-year">✦ {{ .Section }} ✦</span>{{ end }}
+        </a>
+    </h1>
+
+    <p>
+        On my <a target="_blank" href="{{ .Site.Params.homepage }}">Homepage</a> you will find my blog articles.
+    </p>
+
+    {{ block "main" . }}{{ end }}
+
+    <site-footer>
+        <footer-left>
+            📡 <a href="/index.xml" target="_blank">Subscribe to Atom Feed</a>
+        </footer-left>
+        <footer-right>
+            <a target="_blank" href="https://it3.be/contact/">Contact us</a>
+        </footer-right>
+    </site-footer>
+</body>
+
+</html>

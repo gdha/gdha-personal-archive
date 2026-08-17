@@ -1,0 +1,23 @@
+baseURL = "https://it3.be"
+languageCode = "en-us"
+title = "Gratien Dhaese Personal Archive Of Public Files"
+
+# SEO essentials
+enableRobotsTXT = true
+
+# Disable unused taxonomies
+disableKinds = ["taxonomy", "term"]
+
+# Configure outputs - main HTML and Atom feed (using RSS config for compatibility)
+# Note: index.xml template contains Atom format with Media RSS extensions
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML"]
+
+[params]
+description = "Public archive of presentations, talks, and documents by Gratien Dhaese on Linux, ReaR and Technology."
+author = "Gratien D'haese"
+homepage = "https://it3.be"
+
+# Year directories for content generation (newest first)
+years = [ "2024", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2007" ]
