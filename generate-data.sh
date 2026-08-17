@@ -99,7 +99,7 @@ for year_name in "${years[@]}"; do
     # Trim whitespace using bash 4+ parameter expansion
     year_name="${year_name#"${year_name%%[![:space:]]*}"}"  # remove leading whitespace
     year_name="${year_name%"${year_name##*[![:space:]]}"}"  # remove trailing whitespace
-    year_name=$(echo $year | sed -e 's/\"//g')
+    year_name=$(echo $year_name | sed -e 's/\"//g')
     
     year_dir="static/$year_name"
     echo "🔍 Processing $year_name..."
