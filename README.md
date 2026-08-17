@@ -64,6 +64,19 @@ PDF thumbnails are automatically generated using ImageMagick:
 - Lazy loading for performance
 - Incremental updates (only regenerates if PDF is newer)
 
+## Production build
+
+```bash
+export BASE_URL="https://gdha.github.io/gdha-personal-archive/"
+./build.sh -b "$BASE_URL" -p
+```
+
+or
+
+```bash
+hugo --cleanDestinationDir --baseURL "$BASE_URL" --gc --minify
+```
+
 ## References
 
 - [Source Code of the Personl Archive of Schlomo Shapiro](https://github.com/schlomo/schlomo-personal-archive)
