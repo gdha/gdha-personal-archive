@@ -45,7 +45,7 @@ jobs:
           # ./build.sh -b "${{ steps.pages.outputs.base_url }}/" -p
           ./build.sh -b "https://gdha.github.io/gdha-personal-archive/" -p
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
