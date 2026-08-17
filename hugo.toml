@@ -1,4 +1,4 @@
-baseURL = "https://it3.be"
+baseURL = "https://gdha.github.io/gdha-personal-archive/"
 languageCode = "en-us"
 title = "Gratien Dhaese Personal Archive Of Public Files"
 
@@ -17,7 +17,7 @@ section = ["HTML"]
 [params]
 description = "Public archive of presentations, talks, and documents by Gratien Dhaese on Linux, ReaR and Technology."
 author = "Gratien D'haese"
-homepage = "https://it3.be"
+homepage = "https://gdha.github.io/gdha-personal-archive/"
 
 # Year directories for content generation (newest first)
 years = [ "2024", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2007" ]
