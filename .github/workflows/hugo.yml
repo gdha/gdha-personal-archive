@@ -56,6 +56,11 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Copy build output to docs
+        run: |
+          rm -rf docs
+          mkdir -p docs
+          cp -a public/. docs/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
