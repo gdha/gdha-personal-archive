@@ -60,7 +60,7 @@ jobs:
         run: |
           rm -rf docs
           mkdir -p docs
-          cp -a public/. docs/
+          cp -arv public/. docs/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
