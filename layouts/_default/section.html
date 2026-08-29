@@ -1,6 +1,6 @@
 {{ define "main" }}
 <back-link>
-    <a href="/">⬅︎ Back to archive home</a>
+    <a href="{{ "" | relURL }}">⬅︎ Back to archive home</a>
 </back-link>
 
 <file-list>
@@ -10,12 +10,12 @@
     {{- range readDir $staticPath }}
     {{- if not .IsDir }}
     {{- $isPDF := strings.HasSuffix .Name ".pdf" }}
-    <a href="/{{ $sectionName }}/{{ .Name }}" target="_blank">
+    <a href="{{ printf "%s/%s" $sectionName .Name | relURL }}" target="_blank">
         <file-item {{ if not $isPDF }}type="non-pdf" {{ end }}>
             {{- if $isPDF }}
             <file-thumbnail>
                 {{- $thumbnailName := .Name | replaceRE "\\.pdf$" ".png" }}
-                <img src="/thumbnails/{{ $sectionName }}/{{ $thumbnailName }}" alt="Thumbnail of {{ .Name }}"
+                <img src="{{ printf "thumbnails/%s/%s" $sectionName $thumbnailName | relURL }}" alt="Thumbnail of {{ .Name }}"
                     loading="lazy">
             </file-thumbnail>
             {{- else }}

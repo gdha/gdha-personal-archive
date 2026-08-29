@@ -42,14 +42,14 @@
   }
   </script>
 
-    <link href="/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ "favicon.ico" | relURL }}" rel="icon" type="image/x-icon">
+    <link href="{{ "css/style.css" | relURL }}" rel="stylesheet" type="text/css">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Section }} | {{ .Site.Title }}{{ end }}</title>
 </head>
 
 <body>
     <h1>
-        <a href="/">{{ .Site.Title }}
+        <a href="{{ "" | relURL }}">{{ .Site.Title }}
             {{ if not .IsHome }}<br><span class="section-year">✦ {{ .Section }} ✦</span>{{ end }}
         </a>
     </h1>
@@ -62,7 +62,7 @@
 
     <site-footer>
         <footer-left>
-            📡 <a href="/index.xml" target="_blank">Subscribe to Atom Feed</a>
+            📡 <a href="{{ "index.xml" | relURL }}" target="_blank">Subscribe to Atom Feed</a>
         </footer-left>
         <footer-right>
             <a target="_blank" href="https://it3.be/contact/">Contact us</a>

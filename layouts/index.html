@@ -3,7 +3,7 @@
 <year-grid>
     {{- range .Site.Params.years }}
     <year-card>
-        <a href="/{{ . }}/">
+        <a href="{{ printf "%s/" . | relURL }}">
             <year-number>{{ . }}</year-number>
             <year-arrow>→</year-arrow>
         </a>
