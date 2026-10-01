@@ -292,3 +292,11 @@ presentations:
       category: "presentation"
       has_thumbnail: true
       thumbnail: "thumbnails/2007/Relax and Recover - ReaR - Automated Linux Recovery - Open Source Project - Fosdem 2007 - Gratien Dhaese.png"
+  "2003":
+    - title: "Making mkCDrec PXE aware - Open Technology Assembly - LinuxSIG 28 2003 - Gratien Dhaese"
+      filename: "Making mkCDrec PXE aware - Open Technology Assembly - LinuxSIG 28 2003 - Gratien Dhaese.pdf"
+      path: "2003/Making mkCDrec PXE aware - Open Technology Assembly - LinuxSIG 28 2003 - Gratien Dhaese.pdf"
+      date: "2003-01-01"
+      category: "presentation"
+      has_thumbnail: true
+      thumbnail: "thumbnails/2003/Making mkCDrec PXE aware - Open Technology Assembly - LinuxSIG 28 2003 - Gratien Dhaese.png"
