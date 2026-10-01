@@ -79,4 +79,4 @@ hugo --cleanDestinationDir --baseURL "$BASE_URL" --gc --minify
 
 ## References
 
-- [Source Code of the Personl Archive of Schlomo Shapiro](https://github.com/schlomo/schlomo-personal-archive)
+- [Source Code of the Personal Archive of Schlomo Shapiro](https://github.com/schlomo/schlomo-personal-archive)
