@@ -300,3 +300,11 @@ presentations:
       category: "presentation"
       has_thumbnail: true
       thumbnail: "thumbnails/2003/Making mkCDrec PXE aware - Open Technology Assembly - LinuxSIG 28 2003 - Gratien Dhaese.png"
+  "2000":
+    - title: "Disaster Recovery: Be Prepared - Open Technology Assembly - LinuxSIG 24 2000 - Gratien Dhaese"
+      filename: "Disaster Recovery: Be Prepared - Open Technology Assembly - LinuxSIG 24 2000 - Gratien Dhaese.pdf"
+      path: "2000/Disaster Recovery: Be Prepared - Open Technology Assembly - LinuxSIG 24 2000 - Gratien Dhaese.pdf"
+      date: "2000-01-01"
+      category: "presentation"
+      has_thumbnail: true
+      thumbnail: "thumbnails/2000/Disaster Recovery: Be Prepared - Open Technology Assembly - LinuxSIG 24 2000 - Gratien Dhaese.png"
